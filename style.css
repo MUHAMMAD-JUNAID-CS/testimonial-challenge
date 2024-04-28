@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Barlow-Medium;
+    src: url(/fonts/BarlowSemiCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Semi-Bold;
+    src: url(/fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+
+
+body {
+    background-color: #ECF2F8;
+    font-family: Barlow-Medium, sans-serif;
+}
+
+.header,
+.grid-item,
+.grid-item h4 {
+    margin-bottom: 20px;
+}
+
+#testimonial-grid-container {
+    padding: 8% 3%;
+}
+
+#testimonial-container-1 {
+    position: relative;
+    background-color: #7541C8;
+    color: #FFFFFF;
+    z-index: 0;
+
+}
+
+#testimonial-container-2 {
+    background-color: #48556A;
+    color: #FFFFFF;
+}
+
+#testimonial-container-3,
+#testimonial-container-5 {
+    background-color: #FFFFFF;
+}
+
+.grid-item h4+p {
+    opacity: 70%;
+}
+
+.post {
+    opacity: 50%;
+}
+
+.name {
+    font-size: 1rem;
+}
+
+#testimonial-container-4 {
+    background-color: #19212E;
+    color: #FFFFFF;
+}
+
+
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #7541C8;
+}
+
+.grid-item h4 {
+    font-size: 1.2 rem;
+    font-weight: 600;
+}
+
+#quote {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+}
+
+@media (min-width:576px) {
+
+    #testimonial-grid-container,
+    #top,
+    #bottom,
+    #main-left {
+        display: flex;
+    }
+
+    #testimonial-container-1,
+    #testimonial-container-4 {
+        flex-basis: 65%;
+    }
+
+    #testimonial-container-2,
+    #testimonial-container-3 {
+        flex-basis: 35%;
+    }
+
+    #top,
+    #bottom {
+        flex-basis: 50%;
+    }
+
+    #testimonial-grid-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    #testimonial-container-5 {
+        flex-basis: 20%;
+    }
+
+    #main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #main-left .grid-item {
+        margin-right: 15px;
+    }
+
+}
